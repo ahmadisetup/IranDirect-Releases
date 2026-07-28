@@ -24,7 +24,7 @@ jobs:
           $actual = (Get-FileHash unpacked/IranDirectSetup.exe -Algorithm SHA256).Hash
           if ($actual -ne $expected) { throw "Installer SHA256 mismatch" }
           Copy-Item unpacked/IranDirectSetup.exe IranDirectSetup-v0.4.0.exe
-          Set-Content -NoNewline IranDirectSetup-v0.4.0.exe.sha256 $actual
+          Set-Content -Path IranDirectSetup-v0.4.0.exe.sha256 -Value $actual -NoNewline
 
       - name: Publish GitHub release
         shell: pwsh
