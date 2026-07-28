@@ -34,5 +34,6 @@ jobs:
           gh release create v0.4.0 `
             IranDirectSetup-v0.4.0.exe `
             IranDirectSetup-v0.4.0.exe.sha256 `
+            --repo ahmadisetup/IranDirect-Releases `
             --title "IranDirect v0.4.0" `
             --notes "Windows corporate installer with automatic System Proxy detection, stable Chrome extension ID, automatic extension updates, and automatic Iranian-domain list updates."
