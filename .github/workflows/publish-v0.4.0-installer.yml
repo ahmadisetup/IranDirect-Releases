@@ -17,7 +17,7 @@ jobs:
       - name: Download and verify installer
         shell: pwsh
         run: |
-          $url = 'https://sdmntprwestus2.oaiusercontent.com/files/00000000-03a4-81f8-93c8-c3dbbcd8afd8/raw?se=2026-07-28T14:56:34Z&sp=r&sv=2026-02-06&sr=b&scid=a256aeae-bdb5-4bb3-967f-e8b01f03ac40&skoid=4b04981f-b1dc-41e0-a770-8ce0d5c8f411&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-27T22:27:19Z&ske=2026-07-29T22:27:19Z&sks=b&skv=2026-02-06&sig=Rzhn44tDA14w9sIeBIOcNbRM0yry723q1tGY0odguWQ%3D'
+          $url = 'https://sdmntprwestus2.oaiusercontent.com/files/00000000-4f68-81f8-9dd9-8e353ac85330/raw?se=2026-07-28T15:03:05Z&sp=r&sv=2026-02-06&sr=b&scid=c858ae55-de32-44c3-8619-4b69289e5970&skoid=4b04981f-b1dc-41e0-a770-8ce0d5c8f411&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-27T22:28:35Z&ske=2026-07-29T22:28:35Z&sks=b&skv=2026-02-06&sig=mnrABl/QKDCMRrOTQQZFPlUR9AQpj1kIAwsKnXC/MCI%3D'
           Invoke-WebRequest -Uri $url -OutFile setup.zip
           Expand-Archive setup.zip -DestinationPath unpacked
           $expected = (Get-Content unpacked/IranDirectSetup.exe.sha256).Trim()
