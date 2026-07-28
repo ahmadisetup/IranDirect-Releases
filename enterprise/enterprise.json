@@ -1,0 +1,7 @@
+{
+  "version": "0.4.0",
+  "extensionId": "ojnajicidkcepcffjppkhglngdojfafg",
+  "updateUrl": "https://raw.githubusercontent.com/ahmadisetup/IranDirect-Releases/main/enterprise/updates.xml",
+  "crxUrl": "https://raw.githubusercontent.com/ahmadisetup/IranDirect-Releases/main/enterprise/iran-direct-enterprise-v0.4.0.crx",
+  "sha256": "085acb5de7e6693ea9f6ce762c72eceeddf03b50647b4ab88407005ec55a38c2"
+}
