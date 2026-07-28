@@ -10,6 +10,8 @@
 
 VPN را متصل کنید، فایل Setup را با دسترسی Administrator اجرا کنید و روی «نصب IranDirect» بزنید. نصب‌کننده System Proxy ویندوز را تشخیص می‌دهد، افزونه را با شناسه ثابت در Chrome ثبت می‌کند و برنامه کوچک تشخیص پورت را نصب می‌کند. در پایان Chrome را کاملاً ببندید و دوباره اجرا کنید؛ افزونه در `chrome://extensions` دیده می‌شود.
 
+**پیش‌نیاز Chrome:** برای نصب خودکار افزونه‌ای که هنوز در Chrome Web Store نیست، رایانه Windows باید عضو Microsoft Active Directory باشد. دسترسی Administrator به‌تنهایی کافی نیست. روی رایانه Workgroup از ZIP و `Load unpacked` استفاده کنید. پس از نصب شرکتی، در `chrome://policy` وضعیت `ExtensionSettings` باید `OK` باشد.
+
 این فایل فعلاً گواهی تجاری Code Signing ندارد؛ ممکن است Windows SmartScreen هشدار بدهد. در محیطی که فایل از همین صفحه رسمی دریافت و SHA-256 آن بررسی شده است، از **More info → Run anyway** استفاده کنید. برای حذف نسخه شرکتی، همان Setup را دوباره اجرا و «حذف نسخه شرکتی» را انتخاب کنید.
 
 ## نصب دستی دوستانه
