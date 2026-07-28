@@ -3,5 +3,7 @@
   "extensionId": "ojnajicidkcepcffjppkhglngdojfafg",
   "updateUrl": "https://raw.githubusercontent.com/ahmadisetup/IranDirect-Releases/main/enterprise/updates.xml",
   "crxUrl": "https://raw.githubusercontent.com/ahmadisetup/IranDirect-Releases/main/enterprise/iran-direct-enterprise-v0.4.0.crx",
-  "sha256": "085acb5de7e6693ea9f6ce762c72eceeddf03b50647b4ab88407005ec55a38c2"
+  "crxSha256": "085acb5de7e6693ea9f6ce762c72eceeddf03b50647b4ab88407005ec55a38c2",
+  "setupUrl": "https://github.com/ahmadisetup/IranDirect-Releases/releases/download/v0.4.0/IranDirectSetup-v0.4.0.exe",
+  "setupSha256": "df33c3accb3086e4383bc13bf797b9895ebc2cd1b09667183d4281d3469bf782"
 }
