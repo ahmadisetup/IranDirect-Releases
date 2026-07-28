@@ -1,0 +1,38 @@
+name: Publish IranDirect v0.4.0 installer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-v0.4.0-installer.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.event.head_commit.message == 'Publish v0.4.0 installer'
+    runs-on: windows-latest
+    steps:
+      - name: Download and verify installer
+        shell: pwsh
+        run: |
+          $url = 'https://sdmntprwestus2.oaiusercontent.com/files/00000000-03a4-81f8-93c8-c3dbbcd8afd8/raw?se=2026-07-28T14:56:34Z&sp=r&sv=2026-02-06&sr=b&scid=a256aeae-bdb5-4bb3-967f-e8b01f03ac40&skoid=4b04981f-b1dc-41e0-a770-8ce0d5c8f411&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-27T22:27:19Z&ske=2026-07-29T22:27:19Z&sks=b&skv=2026-02-06&sig=Rzhn44tDA14w9sIeBIOcNbRM0yry723q1tGY0odguWQ%3D'
+          Invoke-WebRequest -Uri $url -OutFile setup.zip
+          Expand-Archive setup.zip -DestinationPath unpacked
+          $expected = (Get-Content unpacked/IranDirectSetup.exe.sha256).Trim()
+          $actual = (Get-FileHash unpacked/IranDirectSetup.exe -Algorithm SHA256).Hash
+          if ($actual -ne $expected) { throw "Installer SHA256 mismatch" }
+          Copy-Item unpacked/IranDirectSetup.exe IranDirectSetup-v0.4.0.exe
+          Set-Content -NoNewline IranDirectSetup-v0.4.0.exe.sha256 $actual
+
+      - name: Publish GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v0.4.0 `
+            IranDirectSetup-v0.4.0.exe `
+            IranDirectSetup-v0.4.0.exe.sha256 `
+            --title "IranDirect v0.4.0" `
+            --notes "Windows corporate installer with automatic System Proxy detection, stable Chrome extension ID, automatic extension updates, and automatic Iranian-domain list updates."
