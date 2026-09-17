@@ -2,6 +2,8 @@
 
 مخزن عمومی دانلود و به‌روزرسانی IranDirect؛ افزونه‌ای برای بازکردن مستقیم سایت‌های ایرانی و عبور سایر سایت‌ها از پراکسی محلی VPN.
 
+> **حریم خصوصی / Privacy:** [IranDirect Privacy Policy](PRIVACY.md)
+
 ## دانلود پیشنهادی برای ویندوز شرکت
 
 - [دانلود IranDirectSetup v0.4.0](https://github.com/ahmadisetup/IranDirect-Releases/releases/download/v0.4.0/IranDirectSetup-v0.4.0.exe)
@@ -55,3 +57,4 @@ SHA-256 سالم‌بودن فایل دانلودشده را بررسی می‌�
 
 - توسعه‌دهنده: [Ahmadisetup](https://github.com/ahmadisetup)
 - ایمیل: [ahmadi.itco@gmail.com](mailto:ahmadi.itco@gmail.com)
+- حریم خصوصی: [PRIVACY.md](PRIVACY.md)
