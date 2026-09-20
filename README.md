@@ -2,9 +2,19 @@
 
 مخزن عمومی دانلود و به‌روزرسانی IranDirect؛ افزونه‌ای برای بازکردن مستقیم سایت‌های ایرانی و عبور سایر سایت‌ها از پراکسی محلی VPN.
 
+[![نصب از Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-1a73e8?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/irandirect/fonmpdakgnbdbpcjebhnedocmohjmaeb)
+
 > **حریم خصوصی / Privacy:** [IranDirect Privacy Policy](PRIVACY.md)
 
-## دانلود پیشنهادی برای ویندوز شرکت
+## نصب پیشنهادی
+
+نسخه رسمی IranDirect از Chrome Web Store نصب می‌شود و به‌روزرسانی‌های بعدی را مستقیماً از Chrome دریافت می‌کند:
+
+- [نصب IranDirect از Chrome Web Store](https://chromewebstore.google.com/detail/irandirect/fonmpdakgnbdbpcjebhnedocmohjmaeb)
+
+شناسه رسمی افزونه: `fonmpdakgnbdbpcjebhnedocmohjmaeb`
+
+## نصب سازمانی برای ویندوز شرکت
 
 - [دانلود IranDirectSetup v0.4.0](https://github.com/ahmadisetup/IranDirect-Releases/releases/download/v0.4.0/IranDirectSetup-v0.4.0.exe)
 - [مشاهده SHA-256 نصب‌کننده](https://github.com/ahmadisetup/IranDirect-Releases/releases/download/v0.4.0/IranDirectSetup-v0.4.0.exe.sha256)
@@ -12,7 +22,7 @@
 
 VPN را متصل کنید، فایل Setup را با دسترسی Administrator اجرا کنید و روی «نصب IranDirect» بزنید. نصب‌کننده System Proxy ویندوز را تشخیص می‌دهد، افزونه را با شناسه ثابت در Chrome ثبت می‌کند و برنامه کوچک تشخیص پورت را نصب می‌کند. در پایان Chrome را کاملاً ببندید و دوباره اجرا کنید؛ افزونه در `chrome://extensions` دیده می‌شود.
 
-**پیش‌نیاز Chrome:** برای نصب خودکار افزونه‌ای که هنوز در Chrome Web Store نیست، رایانه Windows باید عضو Microsoft Active Directory باشد. دسترسی Administrator به‌تنهایی کافی نیست. روی رایانه Workgroup از ZIP و `Load unpacked` استفاده کنید. پس از نصب شرکتی، در `chrome://policy` وضعیت `ExtensionSettings` باید `OK` باشد.
+**پیش‌نیاز Chrome:** نصب خودکار نسخه شرکتی خارج از Chrome Web Store فقط روی رایانه Windows عضو Microsoft Active Directory پشتیبانی می‌شود. دسترسی Administrator به‌تنهایی کافی نیست. روی رایانه Workgroup از نسخه رسمی Chrome Web Store یا ZIP و `Load unpacked` استفاده کنید. پس از نصب شرکتی، در `chrome://policy` وضعیت `ExtensionSettings` باید `OK` باشد.
 
 این فایل فعلاً گواهی تجاری Code Signing ندارد؛ ممکن است Windows SmartScreen هشدار بدهد. در محیطی که فایل از همین صفحه رسمی دریافت و SHA-256 آن بررسی شده است، از **More info → Run anyway** استفاده کنید. برای حذف نسخه شرکتی، همان Setup را دوباره اجرا و «حذف نسخه شرکتی» را انتخاب کنید.
 
@@ -22,10 +32,11 @@ VPN را متصل کنید، فایل Setup را با دسترسی Administrator
 - [مشاهده SHA-256 فایل ZIP](downloads/iran-direct-v0.4.0-friends.zip.sha256)
 - [اطلاعات ماشینی آخرین نسخه](latest.json)
 
-ZIP را کامل Extract کنید، در Chrome به `chrome://extensions` بروید، **Developer mode** را روشن کنید و پوشه استخراج‌شده را با **Load unpacked** انتخاب کنید. نسخه Load unpacked برای نصب دستی است و فایل‌های خود افزونه را خودکار تعویض نمی‌کند.
+ZIP را کامل Extract کنید، در Chrome به `chrome://extensions` بروید، **Developer mode** را روشن کنید و پوشه استخراج‌شده را با **Load unpacked** انتخاب کنید. نسخه Load unpacked برای نصب دستی و آزمایش است و فایل‌های خود افزونه را خودکار تعویض نمی‌کند.
 
 ## به‌روزرسانی‌ها
 
+- نسخه Chrome Web Store به‌صورت خودکار توسط Chrome به‌روزرسانی می‌شود.
 - نسخه شرکتی امضاشده از مسیر به‌روزرسانی عمومی IranDirect نسخه‌های بعدی افزونه را خودکار دریافت می‌کند.
 - فهرست سایت‌های ایرانی از [`lists/iranian-domains.json`](lists/iranian-domains.json) به‌صورت روزانه داخل افزونه بررسی می‌شود.
 - دکمه «به‌روزرسانی اکنون» در تنظیمات، فهرست را فوراً دریافت می‌کند.
