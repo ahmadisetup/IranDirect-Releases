@@ -1,13 +1,13 @@
 {
-  "version": "2026.07.28",
-  "updatedAt": "2026-07-28T13:56:46.687Z",
+  "version": "2026.10.26",
+  "updatedAt": "2026-10-26T08:51:07.532Z",
   "generated": true,
   "source": "v2fly/domain-list-community category-ir + IranDirect curated additions",
   "sources": [
     "https://github.com/v2fly/domain-list-community",
     "https://github.com/ahmadisetup/IranDirect-Releases/blob/main/lists/curated-domains.json"
   ],
-  "domainCount": 194,
+  "domainCount": 195,
   "domains": [
     "7sobh.com",
     "abanbroker.com",
@@ -188,6 +188,7 @@
     "tehrantimes.com",
     "tejaratnews.com",
     "telewebion.com",
+    "telewebion.net",
     "tetherland.com",
     "tgju.org",
     "tipaxco.com",
